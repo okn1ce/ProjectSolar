@@ -2,7 +2,7 @@
 
 
 body {
-	background-image: url('https://wallup.net/wp-content/uploads/2018/09/25/621996-minimalism-abstract-Sun-red-windmill.jpg');
+	background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/10/4k-sun-planet-minimalist_1540755595.jpg');
 	text-align: center;
 	margin-top: 2%;
 }
@@ -19,4 +19,21 @@ body {
 	margin-top: 50px;
 	margin-left: 1%;
 	display: inline-block;
+}
+
+.Informations {
+	position: absolute;
+	bottom: 20%;
+	right: 5%;
+	border: 1px;
+	background-color: black;
+	opacity: 80%;
+	padding: 1%
+
+}
+
+p {
+	font-family: 'Baloo Thambi 2', cursive;
+	color: white;
+	font-size: 25px;
 }

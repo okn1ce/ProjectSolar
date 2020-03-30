@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Solar Clicker.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script src="main.js"></script>
+
+<img style="margin-bottom: 5%;"src="ProjectSolar.png" width="400" height="50" />
+
+  </head>
+  <body>
+    <!-- Action buttons-->
+      <section>
+     <!-- Harvest -->
+  <div style="text-align: center;" id="button" class="ui labeled button" tabindex="0">
+  <div class="ui orange button" onclick="Harvest();">
+    <i class="sun outline icon"></i> Harvest sun
+  </div>
+  <a class="ui basic red left pointing label" id="powerCount">
+    0
+  </a>
+</div>
+</div>
+    <!-- Sell -->
+<div class="ui labeled button" tabindex="0">
+  <div class="ui green button" onclick="Sell();">
+    <i class="money bill alternate icon"></i> Sell your power
+  </div>
+  <a class="ui basic left pointing blue label" id="moneyCount">
+    0
+  </a>
+</div>
+</section>
+
+  <!-- Upgrade cards -->
+  <!-- Upgrade harvesting tools -->
+  <section class="upgrades">
+  <div class="ui cards">
+  <div class="card">
+    <div class="content">
+      <i style="margin-bottom: 5%;" class="angle double up icon"></i>
+      <div class="header">
+        Upgrade (<span id="upCount">0</span>)
+      </div>
+      <div class="meta">
+        your harvesting gear.
+      </div>
+      <div class="description">
+        Invest money in better tools.
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div onclick="UpgradeHarvest(1)" class="ui basic green button" id="upPrice">$10</div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- Solar panel -->
+<section class="upgrades">
+  <div class="ui cards">
+  <div class="card">
+    <div class="content">
+      <i style="margin-bottom: 5%;" class="plus square outline icon"></i>
+      <div class="header">
+        Solar Panel (<span id="panelCount">0</span>)
+      </div>
+      <div class="meta">
+        +<span id="panelAdd">0</span>/s.
+      </div>
+      <div class="description">
+        This should help getting more power.
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div onclick="BuyPanel();" class="ui basic green button" id="panelPrice">$100</div>
+      </div>
+    </div>
+  </div>
+</section>
+  </body>
+</html>
